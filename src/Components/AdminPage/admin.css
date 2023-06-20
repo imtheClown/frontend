@@ -1,0 +1,147 @@
+.admin-page-container {
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: black;
+    padding: 1%;
+}
+
+.admin-page-left {
+    width: 25%;
+    height: 99%;
+    margin-top: 1%;
+}
+
+.admin-page-home-search {
+    width: 95%;
+    height: 20%;
+    margin: 1%;
+    background-color: #121212;
+}
+
+.admin-page-texts {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.admin-page-add {
+    background-color: #121212;
+    width: 95%;
+    height: 9%;
+    margin: 1%;
+}
+
+.admin-page-center {
+    width: 69%;
+    height: 100%;
+    margin-top: 1%;
+}
+
+.admin-page-recently-added {
+    height: 75%;
+    width: 100%;
+}
+
+.admin-page-center-content {
+    width: 99%;
+    height: 85;
+    overflow: scroll;
+}
+
+.admin-page-center-recent {
+    background-color: #121212;
+    height: auto;
+    width: 100%;
+}
+
+.admin-page-center-main {
+    background-color: #121212;
+    height: 57%;
+    width: 100%;
+}
+
+.recently-added-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1%;
+    font-size: large;
+}
+
+.admin-page-agency-content {
+    width: 11vw;
+    height: 35vh;
+    margin: 0.5%;
+    overflow: hidden;
+    background-color: #181818;
+}
+
+.admin-page-img-holder {
+    width: 100%;
+    height: 60%;
+    background-color: red;
+}
+
+.admin-page-agency-details-container {
+    height: 35%;
+    width: 90%;
+    overflow: hidden;
+    margin: 2% 5%;
+}
+
+.admin-page-agency-details-name {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.admin-page-agency-details-acro {
+    font-size: 1em;
+    font-weight: light;
+    color: #B1B1B1;
+}
+
+.admin-page-agency-details-location {
+    font-size: 1em;
+    font-weight: light;
+    color: #B1B1B1;
+    line-height: 3%;
+}
+
+.admin-page-agency-details-rating {
+    font-size: 1em;
+    font-weight: light;
+    color: #B1B1B1;
+}
+
+.admin-page-center-main {
+    background-color: #121212;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+}
+
+.admin-page-right {
+    margin-top: 1%;
+    margin-left: 0.5%;
+    width: 19%;
+    height: 100%;
+}
+
+.admin-page-right-container {
+    background-color: #121212;
+    height: auto;
+    width: 99%;
+}
+
+.history {
+    margin: 1% 4%;
+}
+
+.admin-page-hist-container {
+    background-color: #181818;
+    height: 9   vh;
+    width: 92%;
+    margin: 1% 4%;
+}
+
+.history-content {
+    margin: 1%;
+}

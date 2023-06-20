@@ -1,0 +1,58 @@
+.Card{
+    font-family: "Poppins";
+}
+.aboutUser-Container{
+    width: 250px; 
+    height: 350px ; 
+    background: rgb(255, 255, 255); 
+    margin-top: 10px;
+    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.userProfpic-image-container img{
+    background: white;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    padding: 5px; 
+    margin-left: 50px;
+    margin-top: 10px;
+    border : 2px solid white; 
+}
+.lower-container{
+    text-align: center; 
+}
+.username
+{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "Poppins";
+}
+.about_user
+{
+    font-size: 10px;
+    margin-top: -10px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.editProfButton{
+    margin: 5rem;
+    color: black;
+    background-color: white;
+    border: white;
+    font-family: "Poppins";
+    margin-top: 10px;
+}
+.user-loc{
+    padding-top: 1px;
+    color:rgba(53, 120, 222, 0.792);
+    font-family: "Poppins";
+}
+
+.icon-loc2{
+    font-size: 19px;
+    font-family: "Poppins";
+}

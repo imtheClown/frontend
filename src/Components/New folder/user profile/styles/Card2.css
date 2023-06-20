@@ -1,0 +1,104 @@
+.Card2 {
+    font-family: "Poppins";
+}
+.popularRev_container{
+    width: 620px; 
+    height: 450px; 
+    background: rgb(255, 255, 255); 
+    margin-top: 10px;
+    margin-right: 30px;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-family: "Poppins";
+    overflow: scroll;
+}
+
+.popularReviews-title{
+    font-size: 30px;
+    border-bottom:  1px solid rgb(224, 181, 181);
+    padding-left: 20px;
+    
+}
+.popularRev-Agency1-container{
+    margin-top:  2px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.popularRev-Agency1 img{
+    width: 50px;
+    height: 50px;
+}
+
+.agency1Logo-container img{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+.agency1_Name{
+    font-size: 18px;
+    font-style: 'bold' ;
+    margin-top: -50px;
+    margin-left: 70px;
+}
+.agency1_reviewSubject{
+    padding-left: 10px;
+
+}
+.agency1_date{
+    font-size: 10px;
+    color: blue;
+    padding-left:  500px;
+    margin-top: -120px;
+}
+.agency1_review{
+    margin-top: -21px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.popularReviews_agency1Name{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.likeButton1{
+    margin-top: 90px;
+}
+.popularRev-Agency2-container{
+    margin-top:  100px;
+    margin-left: 15px;
+}
+.popularRev-Agency2 img{
+    width: 50px;
+    height: 50px;
+}
+
+.agency2Logo-container img{
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+}
+.agency2_Name{
+    font-size: 18px;
+    font-style: 'bold' ;
+    margin-top: -50px;
+    margin-left: 70px;
+}
+.agency2_reviewSubject{
+    padding-left: 10px;
+
+}
+.agency2_date{
+    font-size: 10px;
+    color: blue;
+    padding-left:  500px;
+    margin-top: -120px;
+}
+.agency2_review{
+    margin-top: -21px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+.popularReviews_agency2Name{
+    font-size: 15px;
+    margin-top: 10px;
+}

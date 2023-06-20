@@ -1,0 +1,256 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.home {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.home .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #2f6a7f;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    mix-blend-mode: hard-light;
+}
+
+.home video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.home .homeContent {
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 4rem 1.5rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    row-gap: 1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--whiteColor);
+    z-index: 100;
+}
+
+.home .homeContent .textDiv {
+    padding-top: 5rem;
+    text-align: center;
+    padding-bottom: 0rem;
+}
+
+.home .homeContent .textDiv .smallText {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.home .homeContent .textDiv .homeTitle {
+    position: relative;
+    font-size: 3rem;
+}
+
+.home .homeContent .cardDiv {
+    width: 100%;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+    padding: 1rem 1rem;
+    background: var(--whiteColor);
+    border-radius: 10px;
+    gap: 1rem;
+}
+
+.home .homeContent .cardDiv label {
+    display: block;
+    color: var(--textColor);
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.home .homeContent .cardDiv .input {
+    height: 40px;
+    padding: 0 1rem;
+    background: var(--inputColor);
+    border-radius: 3rem;
+}
+
+.home .homeContent .cardDiv .input input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.home .homeContent .cardDiv .input input::-webkit-input-placeholder {
+    font-size: 13px;
+}
+
+.home .homeContent .cardDiv .input input:-ms-input-placeholder {
+    font-size: 13px;
+}
+
+.home .homeContent .cardDiv .input input::-ms-input-placeholder {
+    font-size: 13px;
+}
+
+.home .homeContent .cardDiv .input input::placeholder {
+    font-size: 13px;
+}
+
+.home .homeContent .cardDiv .input .icon {
+    font-size: 18px;
+    color: var(--PrimaryColor) !important;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    z-index: 1000;
+}
+
+.search-list2 {
+    position: absolute;
+    background: #fff;
+    width: 89.5%;
+    max-height: 40vh;
+    overflow: scroll;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 3px 0 12px 12px;
+}
+
+.search-items2 {
+    justify-content: left;
+    align-items: left;
+    margin-top: 3px;
+    text-align: left;
+    margin-left: -20px;
+    margin-right: 10px;
+    color: #959595;
+    padding-bottom: 8px;
+    margin-bottom: 3px;
+}
+
+.search-items2:hover {
+    background-color: #dddddd;
+}
+
+@media screen and (min-width: 500px) {
+    .home .homeContent .textDiv .smallText {
+        font-size: 16px;
+    }
+    .home .homeContent .textDiv .homeTitle {
+        position: relative;
+        font-size: 5rem;
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+    .home .homeContent .textDiv .homeTitle::after {
+        position: absolute;
+        content: "";
+        background: var(--SecondaryColor);
+        height: 5px;
+        width: 14px;
+        right: 0px;
+        bottom: 5px;
+        z-index: -1;
+    }
+    .home .homeContent .cardDiv {
+        background: none;
+        margin-top: -3rem;
+    }
+    .home .homeContent .cardDiv .descriptionInput {
+        padding-left: 2rem;
+    }
+    .home .homeContent .cardDiv .descriptionInput label {
+        font-size: 20px;
+        padding-left: 0.5rem;
+        visibility: hidden;
+    }
+    .home .homeContent .cardDiv .descriptionInput .input {
+        height: 60px;
+        padding-left: 30px;
+    }
+    .home .homeContent .cardDiv .descriptionInput .input .btn {
+        font-size: 15px;
+        color: var(--gradientColor) !important;
+    }
+}
+
+.btn {
+    margin-left: 70vw;
+}
+
+@media screen and (min-width: 660px) {
+    .home .homeContent .cardDiv {
+        padding: 2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .home {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1240) {
+    .home {
+        height: 800vh;
+    }
+    .home .homeContent {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .home .homeContent .cardDiv {
+        padding: 2rem 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/*# sourceMappingURL=home.css.map */

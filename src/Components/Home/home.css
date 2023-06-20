@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.wrapperHome {
+    background-image: url("../Assets/Images/bg1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+.mainHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text header {
+    text-decoration: none;
+    font-weight: 700;
+    color: #21263a;
+    transition: .5s;
+    font-size: 49px;
+}
+
+.text p {
+    margin-top: 12px;
+}
+
+form .search-input {
+    margin-top: 20px;
+    background: #fff;
+    width: 600px;
+    height: 55px;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 17px 17px 17px 0;
+}
+
+form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 17px;
+}
+
+form button {
+    background: #59ADFF;
+    padding: 10px, 50px;
+    border-radius: 17px;
+    width: 120px;
+    border: none;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    background-color: #2679cd;
+}
+
+nav button {
+    font-size: 14px;
+    position: absolute;
+    top: 3%;
+    left: 90%;
+    background: #2679cd;
+    width: 72px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+nav button:hover {
+    background-color: #175696;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list {
+    background: #fff;
+    width: 81%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0 0 17px 17px;
+}
+
+.list-items {
+    padding: 8px 12px;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    margin-left: 0;
+}
+
+.list-items:hover {
+    background-color: #dddddd;
+}
+
+.scl {
+    align-items: center;
+    position: absolute;
+    margin-top: 40%;
+    font-weight: 300;
+    color: #989898;
+}

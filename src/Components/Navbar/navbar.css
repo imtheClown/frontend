@@ -1,0 +1,209 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.header {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: var(--whiteColorDeam);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    -webkit-box-shadow: 0 2px 4px rgba(2, 15, 20, 0.242);
+    box-shadow: 0 2px 4px rgba(2, 15, 20, 0.242);
+}
+
+.header .logoImg {
+    color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    z-index: 1000;
+}
+
+.search-list {
+    position: absolute;
+    background: #fff;
+    width: 12.5%;
+    max-height: 40vh;
+    overflow: scroll;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 3px 0 12px 12px;
+}
+
+.search-items {
+    justify-content: left;
+    align-items: left;
+    margin-top: 3px;
+    text-align: left;
+    margin-left: -20px;
+    margin-right: 10px;
+    color: #959595;
+    padding-bottom: 8px;
+    margin-bottom: 3px;
+}
+
+.search-items:hover {
+    background-color: #dddddd;
+}
+
+@media screen and (max-width: 768px) {
+    .header .navBar {
+        position: absolute;
+        background: var(--whiteColorDeam);
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: -500rem;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        z-index: 2000;
+        -webkit-box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    .header .activeNavbar {
+        top: 7rem;
+        position: absolute;
+        background: var(--whiteColorDeam);
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        left: 50%;
+        -webkit-transform: translate(-50%);
+        transform: translate(-50%);
+        z-index: 2000;
+        -webkit-box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        -webkit-transition: .1s ease-in-out;
+        transition: .1s ease-in-out;
+    }
+    .header .navLists {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: .5rem 0;
+    }
+    .header .navLists .navItem {
+        padding: .5rem 0;
+    }
+    .header .navLists .navItem .navLink {
+        color: var(--textColor);
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .header .navLists .navItem .navLink:hover {
+        color: var(--PrimaryColor);
+    }
+    .header .navLists .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+    }
+    .header .navLists .closeNavbar:hover {
+        color: var(--SecondaryColor);
+    }
+}
+
+.header .toggleNavbar .icon {
+    font-size: 25px;
+    color: var(--PrimaryColor);
+}
+
+.header .toggleNavbar:hover.icon {
+    color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+    .toggleNavbar,
+    .closeNavbar {
+        display: none;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    .header .navBar .navLists {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .header .navBar .navLists .navItem .navLink {
+        color: var(--textColor);
+        padding: 0 0.45rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .header .navBar .navLists .navItem .navLink:hover {
+        color: var(--PrimaryColor);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header .navBar .navLists .navItem {
+        padding: 0 0.7rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .header {
+        padding: 1rem 8.5rem;
+    }
+}
+
+
+/*# sourceMappingURL=navbar.css.map */

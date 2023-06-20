@@ -1,0 +1,22 @@
+.Card3{
+    width:310px; 
+    height: 500 px; 
+    background: white; 
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-family: "Poppins";
+}
+.userReviewed
+{
+    font-size: 17px;
+    padding-left: 25px;
+}
+
+.agency-list  img {
+    width: 70px; 
+    height: 70px;
+    margin-left: 20px;
+   
+}

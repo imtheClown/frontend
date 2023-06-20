@@ -1,0 +1,210 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --rateColor: hsl(56, 84%, 53%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --cardBG: rgb(255, 255, 255);
+}
+
+.main-loc {
+    width: 100%;
+}
+
+.main-loc .secTitle-loc .title-loc {
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    color: var(--textColor);
+    margin: 1rem 0;
+    z-index: 2;
+}
+
+.main-loc .secTitle-loc .title-loc::after {
+    position: absolute;
+    content: '';
+    background: var(--SecondaryColor);
+    height: 5px;
+    width: 80px;
+    right: 0;
+    bottom: 5px;
+    z-index: -1;
+}
+
+.main-loc .secContent-main {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.main-loc .secContent-main .offices-loc {
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    row-gap: 10px;
+    border-radius: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--cardBG);
+    -webkit-box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+    overflow: hidden;
+}
+
+.main-loc .secContent-main .offices-loc:hover {
+    background: var(--cardHover);
+    -webkit-box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+    box-shadow: 1 4px 4px rgba(85, 85, 114, 0.549);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.main-loc .secContent-main .offices-loc .imageDiv {
+    height: 180px;
+    width: 80vw;
+    overflow: hidden;
+}
+
+.main-loc .secContent-main .offices-loc .imageDiv img {
+    height: 100%;
+    width: 28vw;
+    margin-top: 2px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transition: 2s ease;
+    transition: 2s ease;
+}
+
+.main-loc .secContent-main .offices-loc .imageDiv:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc {
+    padding: 1rem;
+    border-top: 1.5px solid var(--greyText);
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .officeTitle {
+    color: var(--blackColor);
+    font-size: 1.25rem;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .location {
+    gap: .5rem;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .location .icon {
+    color: var(--textColor);
+    font-size: 18px;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .location .loc {
+    color: var(--textColor);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .rating {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .rating .titleRate {
+    color: var(--textColor);
+    max-width: 100px;
+    line-height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .rating .rate {
+    font-size: 1rem;
+    color: var(--rateColor);
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .rating .rate .icon {
+    font-size: 21px;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .btn {
+    margin-top: 1rem;
+    background-color: var(--SecondaryColor);
+    color: var(--whiteColor);
+    font-weight: 600;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.main-loc .secContent-main .offices-loc .cardInfo-loc .btn .icon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+    .title-loc {
+        font-size: 1.5rem;
+    }
+    .title-loc::after {
+        width: 155px !important;
+    }
+    .secContent-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .secContent-main .offices {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .secContent-main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .secContent-main .offices-loc {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .home {
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .home {
+        height: 95vh;
+    }
+    .home .homeContent {
+        padding-left: 0;
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map */

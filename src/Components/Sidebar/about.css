@@ -1,0 +1,81 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.wrapper-about {
+    height: 600px;
+    width: 380px;
+    margin-left: 130px;
+    margin-top: 230px;
+    margin-bottom: 80px;
+}
+
+.about-title {
+    height: 63px;
+    left: 85px;
+    padding-top: 0.9rem;
+    display: flex;
+    padding-left: 30px;
+    border-radius: 39px;
+    background: rgba(174, 235, 255, 0.2);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.description {
+    height: 333px;
+    left: 85px;
+    margin-top: 2rem;
+    padding-top: 1.9rem;
+    flex-direction: column;
+    display: flex;
+    padding-right: 1.5rem;
+    padding-left: 30px;
+    border-radius: 39px;
+    background: rgba(174, 235, 255, 0.2);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.agency-loc {
+    padding-top: 2.4rem;
+    color: rgba(53, 120, 222, 0.792)
+}
+
+.icon-loc {
+    font-size: 19px;
+}
+
+.photos-section {
+    padding-top: 2rem;
+    width: 400px;
+}
+
+.title {
+    margin-left: 7px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.photos-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+
+.photos-card ul li {
+    margin-left: 7px;
+    list-style: none;
+    padding: 0.6px;
+    flex: 0 0 30.33%;
+}

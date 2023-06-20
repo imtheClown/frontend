@@ -1,0 +1,192 @@
+::selection {
+    color: #fff;
+    background: #1a81ff;
+}
+
+.feedback-container {
+    width: 800px;
+    margin-left: 530px;
+    margin-top: -45%;
+}
+
+.feedback-heading {
+    height: 63px;
+    left: 85px;
+    padding-top: 0.9rem;
+    display: flex;
+    padding-left: 30px;
+    border-radius: 40px;
+    background: rgba(174, 235, 255, 0.2);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.add-feedback {
+    height: 400px;
+    left: 85px;
+    margin-top: 2rem;
+    padding-top: 1.9rem;
+    flex-direction: column;
+    display: flex;
+    padding-right: 1.5rem;
+    padding-left: 30px;
+    border-radius: 39px;
+    background: rgba(174, 235, 255, 0.2);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.add-feedback-header {
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #ccc;
+}
+
+.add-feedback form .content,
+.audience .list-addreview li .column {
+    display: flex;
+    align-items: center;
+}
+
+.list-addreview {
+    margin-bottom: 0;
+    padding-left: 100px;
+}
+
+.add-feedback form .content img {
+    cursor: default;
+    max-width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-top: 12px;
+}
+
+.add-feedback form .content .details {
+    margin: -3px 0 0 12px;
+}
+
+form .content .details p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+form :where(textarea, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+form textarea {
+    resize: none;
+    font-size: 18px;
+    border-radius: 16px;
+    padding-left: 12px;
+    padding-top: 12px;
+    margin-top: 30px;
+    min-height: 100px;
+    width: 600px;
+    background: none;
+}
+
+form textarea::placeholder {
+    color: #858585;
+}
+
+form textarea:focus::placeholder {
+    color: #b3b3b3;
+}
+
+form :where(.theme-emoji, .options) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form .options {
+    height: 57px;
+    margin: 15px 0;
+    padding: 0 15px;
+    border-radius: 7px;
+    border: 1px solid #B9B9B9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form .options :where(.list, li),
+.audience :where(.arrow-back, .icon, li .radio) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .options p {
+    color: #595959;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: default;
+    margin-bottom: 0;
+}
+
+form .options .list {
+    list-style: none;
+}
+
+.options .list li {
+    height: 42px;
+    width: 42px;
+    margin: 0 -1px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.options .list li:hover {
+    background: #f0f1f4;
+}
+
+.options .list li img {
+    width: 23px;
+}
+
+form button {
+    height: 53px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ffffff;
+    cursor: no-drop;
+    border-radius: 7px;
+    background: #4599FF;
+    transition: all 0.3s ease;
+}
+
+form textarea:valid~button {
+    color: #fff;
+    cursor: pointer;
+    background: #1871df;
+}
+
+form textarea:valid~button:hover {
+    background: rgb(14, 102, 210);
+}
+
+.star {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    margin-top: -30px;
+    padding-left: 10px;
+}
+
+.star:hover,
+.star.selected {
+    color: #ff9800;
+}
+
+.options-txt {
+    color: #e0e0e0;
+    font-size: 14px;
+    padding-top: 2px;
+}

@@ -1,0 +1,10 @@
+@import "@fontsource/poppins"; 
+.App1 {
+  background : #ededed;
+}
+
+.Columns {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  padding-bottom: 500px;
+}
